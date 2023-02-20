@@ -10,7 +10,8 @@ terraform {
 }
 
 provider "aws" {
-  region = data.aws_region.current.id
+  #region = data.aws_region.current.id
+  region = "ap-southeast-1"
   alias  = "default"
 
   default_tags {
